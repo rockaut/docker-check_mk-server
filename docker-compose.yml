@@ -1,0 +1,8 @@
+version: '2'
+services:
+  check_mk:
+    image: rockaut/check_mk-server
+    ports:
+      - "5000:5000"
+    stdin_open: true
+    tty: true
