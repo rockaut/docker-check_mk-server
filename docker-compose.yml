@@ -1,4 +1,7 @@
 version: '2'
+volumes:
+  - cmk_local
+  - cmk_etc_cmk
 services:
   check_mk:
     image: rockaut/check_mk-server
@@ -9,3 +12,4 @@ services:
     volumes:
       - cmk_local:/opt/omd/sites/cmk/local
       - cmk_etc_cmk:/opt/omd/sites/cmk/etc/check_mk
+    container_name: cmk-server
