@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER "rockaut" <fischbacher.markus@gmail.com>
+LABEL maintainer "rockaut" <fischbacher.markus@gmail.com>
 EXPOSE 5000
 
 # Install prequesites
@@ -27,6 +27,8 @@ RUN omd create $sitename; \
 
 # copy startscript and tools
 COPY ./start.sh /usr/local/bin/start.sh
+
+VOLUME [ "/opt/omd/sites/${sitename}/local", "/opt/omd/sites/${sitename}/etc/check_mk" ]
 
 # finish
 CMD bash -C '/usr/local/bin/start.sh';'/bin/bash'
