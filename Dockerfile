@@ -9,6 +9,7 @@ libnet-snmp-perl libpango1.0-0 libperl5.22 libreadline5 libsnmp-perl libuuid1 li
 php-cli php-cgi php-gd php-mcrypt php-sqlite3 php-json php-pear pyro rsync smbclient rpcbind \
 snmp unzip xinetd python-ldap freeradius-utils libpcap0.8 rpm binutils lcab libgsf-1-114 libglib2.0-0 \
 python-reportlab python-imaging poppler-utils python-openssl \
+iputils-arping iputils-clockdiff iputils-ping iputils-tracepath libgnutls-openssl27 \
 && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install check_mk and dependents
