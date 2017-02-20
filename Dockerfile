@@ -32,6 +32,7 @@ RUN omd create ${sitename}; \
 
 # copy startscript and tools
 COPY ./start.sh /usr/local/bin/start.sh
+COPY ./auth.serials /opt/omd/sites/${sitename}/etc/auth.serials
 
 VOLUME [ "/opt/omd/sites/${sitename}/local", "/opt/omd/sites/${sitename}/etc/check_mk" ]
 
