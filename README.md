@@ -1,3 +1,9 @@
+>- - -
+> *WARNING: this container isn't intended for production use!*
+>
+> *Particularly data persistance isn't guaranteed. (currently)*
+>- - -
+
 # check_mk-server
 Dockerized check_mk server without modifications
 
