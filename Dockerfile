@@ -13,7 +13,7 @@ iputils-arping iputils-clockdiff iputils-ping iputils-tracepath libgnutls-openss
 && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install check_mk and dependents
-ARG CMK_VERSION=1.2.8p17
+ARG CMK_VERSION=1.2.8p18
 
 RUN wget "https://mathias-kettner.de/support/${CMK_VERSION}/check-mk-raw-${CMK_VERSION}_0.xenial_amd64.deb" \
     && dpkg -i check-mk-raw-${CMK_VERSION}_0.xenial_amd64.deb || true \
