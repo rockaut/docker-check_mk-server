@@ -19,8 +19,6 @@ Dockerized check_mk server without modifications
 - /opt/omd/sites/${sitename}/etc/check_mk -- config files for cmk/wato
 
 You may also just use `-v volumename:/opt/omd/sites/${sitename}` to map the whole check_mk site folder.
-<<<<<<< Updated upstream
-=======
 
 - - -
 
