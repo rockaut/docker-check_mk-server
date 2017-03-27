@@ -8,7 +8,7 @@
 Dockerized check_mk server without modifications
 
 ## Build Args
-- CMK_VERSION -- Default = 1.2.8p18 -- Sets the used Check_MK version in the Dockerfile.
+- CMK_VERSION -- Default = 1.2.8p19 -- Sets the used Check_MK version in the Dockerfile.
 - sitename -- Default = cmk -- Used as the sites name.
 
 ## Exposed ports
